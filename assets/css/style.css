@@ -24,6 +24,10 @@ textarea {
   border-top: 1px solid white;
 }
 
+header{
+  text-align: center;
+}
+
 .hour {
   background-color: #ffffff;
   color: #000000;
