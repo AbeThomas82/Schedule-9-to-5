@@ -4,7 +4,9 @@
 var today = dayjs().format('dddd, MMMM D');
 $('#currentDay').text(today);
 var milTime = dayjs().format('HH');
-var idTags = $('.time-block').attr("data-value");
+var timeBlockArray = $(".time-block");
+var idTags = $('.time-block').attr('data-value');
+console.log(timeBlockArray);
 console.log(idTags);
 var matches = [idTags];
 console.log(milTime);
