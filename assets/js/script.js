@@ -8,22 +8,28 @@ var timeBlockArray = $(".time-block");
 var idTags = $('.time-block').attr('data-value');
 console.log(timeBlockArray);
 console.log(idTags);
-var matches = [idTags];
 console.log(milTime);
+var matches = $('.time-block').each(function() { 
+  console.log(this) 
+})
 console.log(matches);
-$(function compareTime() {
-    for (var i=9; i<18; i++){
-      if(matches[i] === milTime){
-        return "present"
-      }else if(matches[i] > milTime){
-        return "future"
-      }else
-        return "past"
-    }
-  compareTime();
+function compareTime() {
+    //$('.time-block').attr('data-value');
+    //for (var i=9; i<matches.length; i++){
+      $('.time-block').each(function() { 
+        console.log(this) 
+        var arrayEl = $(this).attr('data-value');  
+      if(arrayEl === milTime){
+        console.log("present")
+      }else if(arrayEl > milTime){
+        console.log("future")
+      }else{
+        console.log("past")
+      }
+    }) 
   console.log(compareTime);
-});
-
+};
+compareTime();
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
