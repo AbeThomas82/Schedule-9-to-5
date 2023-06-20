@@ -4,15 +4,15 @@
 var today = dayjs().format('dddd, MMMM D');
 $('#currentDay').text(today);
 var milTime = dayjs().format('HH');
-var matches = document.querySelectorAll("id");
+var matches = document.querySelectorAll("id").value;
 $(function compareTime() {
-    for (var i=0; i<matches.length; i++){
+    for (var i=9; i<18; i++){
       if(milTime === matches[i]){
         $('.present')
       }else if(milTime < matches[i]){
         $('.future')   
       }else
-        $('past')
+        $('.past')
     }
   
   // TODO: Add a listener for click events on the save button. This code should
@@ -34,3 +34,4 @@ $(function compareTime() {
   //
   // DONE: Add code to display the current date in the header of the page.
 });
+compareTime();
