@@ -4,13 +4,16 @@
 var today = dayjs().format('dddd, MMMM D');
 $('#currentDay').text(today);
 var milTime = dayjs().format('HH');
-var idTags = $("div>id");
+var idTags = $('.time-block').attr("data-value");
+console.log(idTags);
 var matches = [idTags];
+console.log(milTime);
+console.log(matches);
 $(function compareTime() {
     for (var i=9; i<18; i++){
-      if(milTime === matches[i]){
+      if(matches[i] === milTime){
         return "present"
-      }else if(milTime < matches[i]){
+      }else if(matches[i] > milTime){
         return "future"
       }else
         return "past"
