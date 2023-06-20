@@ -4,13 +4,16 @@
 var today = dayjs().format('dddd, MMMM D');
 $('#currentDay').text(today);
 var milTime = dayjs().format('HH');
+var matches = document.querySelectorAll("id");
 $(function compareTime() {
-  if(milTime === (document.getElementById('hour-9').dataset.value)){
-    $('.present')
-  }else if(milTime < (document.getElementById('hour-9').dataset.value)){
-    $('.past')
-  }else
-    $('.future')
+    for (var i=0; i<matches.length; i++){
+      if(milTime === matches[i]){
+        $('.present')
+      }else if(milTime < matches[i]){
+        $('.future')   
+      }else
+        $('past')
+    }
   
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
@@ -31,4 +34,3 @@ $(function compareTime() {
   //
   // DONE: Add code to display the current date in the header of the page.
 });
-compareTime();
