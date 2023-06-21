@@ -2,7 +2,7 @@
 
 ## Description
 
-In this assignment, I was trying to display the functionality and convenience of allowing the user to go from the pad-and-pen approach to a day planner in favor of electronic scheduling.
+In this assignment, I was trying to display the functionality and convenience of allowing the user to go from the pad-and-pen day planning approach to the use of a website for electronic scheduling.
 
 The purpose was to show the user a more real-time ability in tracking the day's goals by using a color-coded system to describe events that are currently being noted as well as events for also the past and the future. These events in real-time were determined by compared the current time to a military time standard in the interest of facilitating a simpler ascending order scheme for time.
 
