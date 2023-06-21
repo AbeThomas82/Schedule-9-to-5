@@ -21,15 +21,46 @@ function compareTime() {
         var arrayEl = $(this).attr('data-value');  
       if(arrayEl === milTime){
         console.log("present")
+        $(this).attr("class", "present row time-block")
       }else if(arrayEl > milTime){
         console.log("future")
+        $(this).attr("class", "future row time-block")
       }else{
         console.log("past")
+        $(this).attr("class", "past row time-block")
       }
     }) 
   console.log(compareTime);
 };
 compareTime();
+
+function saveButton() {
+  var saveButtons = document.querySelectorAll(".saveBtn");
+  for (var button of saveButtons) {
+    button.addEventListener("click", function(e) {
+    if (e.target.tagName === "I") {
+      var hour = e.target.parentElement.parentElement.dataset.value;
+      var saveText = e.target.parentElement.previousElementSibling.value;
+      localStorage.setItem(hour,saveText);
+      return  
+    }
+    var hour = e.target.parentElement.dataset.value;
+    var saveText = e.target.previousElementSibling.value;
+    localStorage.setItem(hour,saveText);
+    })
+  }
+};
+saveButton();
+
+function renderActivities() {
+  var textAreas = document.querySelectorAll(".description");
+  for (var textArea of textAreas) {
+    var hour = textArea.parentElement.dataset.value;
+    var activity = localStorage.getItem(hour);
+    textArea.textContent = activity; 
+  }
+}
+renderActivities()
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
