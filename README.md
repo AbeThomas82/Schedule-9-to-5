@@ -32,7 +32,7 @@ GitPages supplied deployed changes to launch refactored website.
 
 ## Usage
 
-The end user should be able to traverse the day planner website, which has the current date in its header, from the typical 9am through 5pm work week schedule. The user will be able to click on a text box within each corresponding hour block and be able to input their information. Once complete, they should be able to click on the save button, which has an icon of an old 3.5' floppy disk located on a button to the right of the text box. The information will be affixed to the time block regardless of webpage refresh. 
+The end user should be able to traverse the day planner website, which has the current date in its header, from the typical 9am through 5pm work week schedule. The user will be able to click on a text box within each corresponding hour block and be able to input their information. Once complete, they should be able to click on the save button, which has an icon of an old 3.5" floppy disk located on a button to the right of the text box. The information will be affixed to the time block regardless of webpage refresh. 
 
 ## Links
 
