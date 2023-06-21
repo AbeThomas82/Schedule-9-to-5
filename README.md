@@ -42,7 +42,7 @@ Deployed Site: https://abethomas82.github.io/Schedule-9-to-5/
 
 ## Screenshots
 
-[Afterhours Screenshot, all time blocks green](./assets/Screenshot1.png)
+[After-hours Screenshot, all time blocks green](./assets/Screenshot1.png)
 
 ## Credits/Sources
 
