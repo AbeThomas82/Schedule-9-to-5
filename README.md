@@ -8,9 +8,11 @@ The purpose was to show the user a more real-time ability in tracking the day's 
 
 The color coding was as follows:
 
-Gray: past events,
-Red: present events,
-Green: future events.
+Gray: "past" events,
+
+Red: "present" events,
+
+Green: "future" events.
 
 Finally, entries which are saved in the planner are stored in localStorage and can only be deleted via access to the DevTools "Application" settings. This is available upon selecting the "Inspect" option, which can be reached when right-clicking.
 
