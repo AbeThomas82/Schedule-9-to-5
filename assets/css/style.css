@@ -26,7 +26,7 @@ textarea {
 
 header{
   text-align: center;
-}
+}/*Used to center text for the current dayjs date*/
 
 .hour {
   background-color: #ffffff;
@@ -37,17 +37,17 @@ header{
 .past {
   background-color: #d3d3d3;
   color: white;
-}
+}/*"past" class defined for style*/
 
 .present {
   background-color: #ff6961;
   color: white;
-}
+}/*"present" class defined for style*/
 
 .future {
   background-color: #77dd77;
   color: white;
-}
+}/*"future" class defined for style*/
 
 .saveBtn {
   border-left: 1px solid black;
