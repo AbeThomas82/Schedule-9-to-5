@@ -42,7 +42,13 @@ Deployed Site: https://abethomas82.github.io/Schedule-9-to-5
 
 ## Screenshots
 
-[After-hours screenshot, note the time blocks are green.](./assets/Screenshot1.png)
+![After-hours screenshot, note the time blocks are green.](./assets/Screenshot1.png)
+
+![Screenshot at 11:15 AM, note the colors for present and past.](./assets/Screenshot2.png)
+
+![The word "text" saved prior to refresh.](./assets/Screenshot3.png)
+
+![The word remains after refresh.](./assets/Screenshot4.png)
 
 ## Credits/Sources
 
