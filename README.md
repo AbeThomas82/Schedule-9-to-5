@@ -38,7 +38,7 @@ The end user should be able to traverse the day planner website, which has the c
 
 Repository: https://github.com/AbeThomas82/Schedule-9-to-5
 
-Deployed Site: https://abethomas82.github.io/Schedule-9-to-5/
+Deployed Site: https://abethomas82.github.io/Schedule-9-to-5
 
 ## Screenshots
 
